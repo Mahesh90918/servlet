@@ -30,11 +30,11 @@
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>hi</servlet-name>
+		<servlet-name>h</servlet-name>
 		<servlet-class>myDynamicWeb.Hi</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>hi</servlet-name>
-		<url-pattern>/hi</url-pattern>
+		<servlet-name>he</servlet-name>
+		<url-pattern>/he</url-pattern>
 	</servlet-mapping>
 </web-app>
