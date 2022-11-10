@@ -13,8 +13,10 @@
 	<p>list of data</p>
 	<%
 		List<Employee> ll = (List<Employee>) request.getAttribute("empolyee");
-		String message = (String) request.getAttribute("msg");
-		message = message == null ? "" : message;
+		
+	%>
+	<%String message = (String) request.getAttribute("msg");
+	message = message == null ? "" : message;
 	%>
 
 	<%
