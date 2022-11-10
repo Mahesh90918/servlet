@@ -38,7 +38,7 @@ public class Welcome extends HttpServlet {
 			PrintWriter writer = response.getWriter();
 		
 			writer.println("<pre>");
-			writer.println("Id       :" + rs.getInt(1) );
+			writer.println("Id       :" + rs.getInt(1));
 			writer.println("username :" + rs.getString(2));
 			writer.println("password :" + rs.getString(3));
 			writer.println("Address  :" + rs.getString(4));
