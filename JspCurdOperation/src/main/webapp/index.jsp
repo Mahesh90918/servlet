@@ -8,14 +8,14 @@
 </head>
 <body>
 	<h1>Employee Management System</h1>
-	<a href="delete.jsp">Delete Employee</a>
-	<br>
 	<br>
 	<a href="save.jsp">Save Employee</a>
 	<br>
+	<!--  <a href="delete.jsp">Delete Employee</a>
+	<br>
 	<br>
 	<a href="update.jsp">Update Employee</a>
-	<br>
+	<br>-->
 	<br>
 	<a href="./findall">GetAll Employees</a>
 	<br>
