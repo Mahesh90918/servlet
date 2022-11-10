@@ -1,3 +1,4 @@
+<%@page import="com.ciq.ems.model.Employee"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -7,19 +8,20 @@
 <title>Insert title here</title>
 </head>
 <body>
+	
 	<h1 align="center">Register Employee</h1>
 	<form action="./save" method="post">
 		<table align="center">
 			<tr>
 				<td>Eid:</td>
 				<td><input type="text" name="eid" placeholder="Enter eid"
-					required="required"></td>
+					required="required" >"></td>
 			</tr>
 
 			<tr>
 				<td>Ename:</td>
 				<td><input type="text" name="ename" placeholder="Enter name"
-					required="required"></td>
+					required="required" ></td>
 			</tr>
 
 			<tr>
@@ -39,6 +41,6 @@
 			</tr>
 		</table>
 	</form>
-	<a href="index.jsp" style="color:red">home page</a>
+	<a href="index.jsp" style="color: red">home page</a>
 </body>
 </html>

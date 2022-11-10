@@ -46,7 +46,8 @@
 		<br>
 		<div>
 			<p>
-				<a href="index.jsp">home page</a>
+				<a href="index.jsp">home page</a><br><br>
+				<a href="save.jsp">add new Data </a>
 			</p>
 		</div>
 </body>

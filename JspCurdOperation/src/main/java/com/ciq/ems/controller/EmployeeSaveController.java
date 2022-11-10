@@ -2,6 +2,7 @@ package com.ciq.ems.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -43,6 +44,19 @@ public class EmployeeSaveController extends HttpServlet {
 		writer.print("SUCCESSFULLY SAVE");
 		writer.print("<a href='index.jsp'>home page</a>");
 		writer.close();
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		response.setContentType("text/html");
+		PrintWriter p = response.getWriter();
+		EmployeeServiceImpl emp = new EmployeeServiceImpl();
+		List<Employee> list = emp.findAll();
+		request.setAttribute("empolyee", list);
+		request.getRequestDispatcher("list_data.jsp").forward(request, response);
+		p.flush();
+		p.close();
 	}
 
 }
