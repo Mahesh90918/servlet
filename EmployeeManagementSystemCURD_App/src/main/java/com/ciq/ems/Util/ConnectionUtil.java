@@ -69,7 +69,6 @@ public class ConnectionUtil {
 		try {
 			if (resultSet != null) {
 				resultSet.close();
-				
 				close(statement, connection);
 			}
 		} catch (SQLException e) {

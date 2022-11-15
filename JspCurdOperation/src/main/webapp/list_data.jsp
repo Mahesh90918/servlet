@@ -13,15 +13,25 @@
 	<p>list of data</p>
 	<%
 		List<Employee> ll = (List<Employee>) request.getAttribute("empolyee");
-		
 	%>
-	<%String message = (String) request.getAttribute("msg");
-	message = message == null ? "" : message;
-	%>
-
 	<%
-		out.print(ll);
+		String message = (String) request.getAttribute("msg");
+		message = message == null ? "" : message;
 	%>
+	
+	<%
+		if (request.getAttribute("msg") != null) {
+			out.print("sucessfully saved  mahseh");
+		}
+	%>
+	<br>
+	<%
+		out.print(message);
+	%>
+	<br>
+	<%--
+		out.print(ll);
+	--%>
 	<table border="1px;">
 		<tr>
 			<th>ID</th>
@@ -48,8 +58,8 @@
 		<br>
 		<div>
 			<p>
-				<a href="index.jsp">home page</a><br><br>
-				<a href="save.jsp">add new Data </a>
+				<a href="index.jsp">home page</a><br> <br> <a
+					href="save.jsp">add new Data </a>
 			</p>
 		</div>
 </body>

@@ -3,6 +3,7 @@ package com.ciq.ems.Util;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -18,9 +19,11 @@ public class ConnectionUtil {
 	static {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
+
 			properties.load(ConnectionUtil.class.getClassLoader().getResourceAsStream("db.properties"));
 			connection = DriverManager.getConnection(properties.getProperty("mysql.url"),
 					properties.getProperty("mysql.user"), properties.getProperty("mysql.password"));
+
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
